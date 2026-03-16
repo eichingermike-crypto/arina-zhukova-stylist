@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Arina Style — Personal Stylist</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav class="nav" id="nav">
+    <div class="nav__container">
+      <a href="#" class="nav__logo">ARINA<span>STYLE</span></a>
+      <button class="nav__toggle" id="navToggle" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav__menu" id="navMenu">
+        <li><a href="#about">About</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="#testimonials">Testimonials</a></li>
+        <li><a href="#pricing">Pricing</a></li>
+        <li><a href="#contact" class="nav__cta">Book Now</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section class="hero" id="hero">
+    <div class="hero__overlay"></div>
+    <div class="hero__content">
+      <p class="hero__tagline animate fade-up">Personal Stylist & Image Consultant</p>
+      <h1 class="hero__title animate fade-up" data-delay="1">Discover Your <em>Signature</em> Style</h1>
+      <p class="hero__subtitle animate fade-up" data-delay="2">I help you build a wardrobe that reflects who you truly are — with confidence, color, and intention.</p>
+      <div class="hero__buttons animate fade-up" data-delay="3">
+        <a href="#services" class="btn btn--primary">Explore Services</a>
+        <a href="#contact" class="btn btn--outline">Get in Touch</a>
+      </div>
+    </div>
+    <div class="hero__scroll">
+      <span>Scroll</span>
+      <div class="hero__scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section class="about section" id="about">
+    <div class="container">
+      <div class="about__grid">
+        <div class="about__image animate fade-in-left">
+          <div class="about__image-placeholder">
+            <span>AS</span>
+          </div>
+          <div class="about__image-accent"></div>
+        </div>
+        <div class="about__content animate fade-in-right">
+          <span class="section__label">About Me</span>
+          <h2 class="section__title">Style is a way to say who you are <em>without speaking</em></h2>
+          <p>With over 8 years of experience in personal styling and image consulting, I've helped hundreds of clients transform not just their wardrobes, but their confidence.</p>
+          <p>I believe that great style isn't about following trends — it's about understanding your body, your lifestyle, and your personality to create looks that feel authentically you.</p>
+          <div class="about__stats">
+            <div class="about__stat">
+              <span class="about__stat-number">500+</span>
+              <span class="about__stat-label">Happy Clients</span>
+            </div>
+            <div class="about__stat">
+              <span class="about__stat-number">8+</span>
+              <span class="about__stat-label">Years Experience</span>
+            </div>
+            <div class="about__stat">
+              <span class="about__stat-number">15</span>
+              <span class="about__stat-label">Cities Served</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services -->
+  <section class="services section" id="services">
+    <div class="container">
+      <div class="section__header animate fade-up">
+        <span class="section__label">What I Offer</span>
+        <h2 class="section__title">Services Tailored to <em>You</em></h2>
+        <p class="section__desc">Every client is unique. I craft personalized experiences that match your goals, budget, and lifestyle.</p>
+      </div>
+      <div class="services__grid">
+        <div class="services__card animate scale-in" data-delay="0">
+          <div class="services__icon">
+            <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2">
+              <circle cx="24" cy="12" r="8"/><path d="M8 44c0-8.837 7.163-16 16-16s16 7.163 16 16"/>
+            </svg>
+          </div>
+          <h3>Personal Styling</h3>
+          <p>A complete style consultation tailored to your body type, coloring, and personal preferences. Walk away with a clear style direction.</p>
+          <ul class="services__features">
+            <li>Color analysis</li>
+            <li>Body type assessment</li>
+            <li>Style guide creation</li>
+            <li>Outfit mood boards</li>
+          </ul>
+          <a href="#contact" class="btn btn--secondary">Learn More</a>
+        </div>
+        <div class="services__card services__card--featured animate scale-in" data-delay="1">
+          <div class="services__badge">Most Popular</div>
+          <div class="services__icon">
+            <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2">
+              <rect x="8" y="4" width="32" height="40" rx="2"/><path d="M16 16h16M16 24h16M16 32h8"/>
+            </svg>
+          </div>
+          <h3>Wardrobe Edit</h3>
+          <p>I'll come to your closet, edit what stays and what goes, and create dozens of new outfit combinations from what you already own.</p>
+          <ul class="services__features">
+            <li>Closet audit & detox</li>
+            <li>Outfit combinations</li>
+            <li>Shopping list</li>
+            <li>Seasonal rotation plan</li>
+          </ul>
+          <a href="#contact" class="btn btn--primary">Book Now</a>
+        </div>
+        <div class="services__card animate scale-in" data-delay="2">
+          <div class="services__icon">
+            <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M6 24h36M24 6v36"/><circle cx="24" cy="24" r="20"/>
+            </svg>
+          </div>
+          <h3>Shopping Tour</h3>
+          <p>A curated shopping experience at handpicked stores. I'll guide you to find pieces that work with your existing wardrobe and style goals.</p>
+          <ul class="services__features">
+            <li>Pre-selected stores</li>
+            <li>Budget management</li>
+            <li>Try-on guidance</li>
+            <li>Complete new looks</li>
+          </ul>
+          <a href="#contact" class="btn btn--secondary">Learn More</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Portfolio -->
+  <section class="portfolio section" id="portfolio">
+    <div class="container">
+      <div class="section__header animate fade-up">
+        <span class="section__label">My Work</span>
+        <h2 class="section__title">Style <em>Transformations</em></h2>
+        <p class="section__desc">A glimpse into the transformations I've created for my clients.</p>
+      </div>
+      <div class="portfolio__grid">
+        <div class="portfolio__item portfolio__item--tall animate fade-up" data-delay="0">
+          <div class="portfolio__placeholder" style="--hue: 340;">
+            <span>Before & After</span>
+          </div>
+        </div>
+        <div class="portfolio__item animate fade-up" data-delay="1">
+          <div class="portfolio__placeholder" style="--hue: 280;">
+            <span>Editorial</span>
+          </div>
+        </div>
+        <div class="portfolio__item animate fade-up" data-delay="2">
+          <div class="portfolio__placeholder" style="--hue: 200;">
+            <span>Casual Chic</span>
+          </div>
+        </div>
+        <div class="portfolio__item animate fade-up" data-delay="3">
+          <div class="portfolio__placeholder" style="--hue: 160;">
+            <span>Business</span>
+          </div>
+        </div>
+        <div class="portfolio__item portfolio__item--wide animate fade-up" data-delay="4">
+          <div class="portfolio__placeholder" style="--hue: 30;">
+            <span>Seasonal Lookbook</span>
+          </div>
+        </div>
+        <div class="portfolio__item animate fade-up" data-delay="5">
+          <div class="portfolio__placeholder" style="--hue: 60;">
+            <span>Event Styling</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials -->
+  <section class="testimonials section" id="testimonials">
+    <div class="container">
+      <div class="section__header animate fade-up">
+        <span class="section__label">Client Love</span>
+        <h2 class="section__title">What My Clients <em>Say</em></h2>
+      </div>
+      <div class="testimonials__grid">
+        <div class="testimonials__card animate fade-up" data-delay="0">
+          <div class="testimonials__stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+          <p>"Arina completely transformed how I see myself. I now get dressed in minutes and feel amazing every single day."</p>
+          <div class="testimonials__author">
+            <div class="testimonials__avatar" style="--hue: 340;">S</div>
+            <div>
+              <strong>Sarah M.</strong>
+              <span>Marketing Director</span>
+            </div>
+          </div>
+        </div>
+        <div class="testimonials__card animate fade-up" data-delay="1">
+          <div class="testimonials__stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+          <p>"The wardrobe edit was life-changing. I donated 40% of my clothes and somehow have more outfits than before!"</p>
+          <div class="testimonials__author">
+            <div class="testimonials__avatar" style="--hue: 200;">L</div>
+            <div>
+              <strong>Lisa K.</strong>
+              <span>Entrepreneur</span>
+            </div>
+          </div>
+        </div>
+        <div class="testimonials__card animate fade-up" data-delay="2">
+          <div class="testimonials__stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+          <p>"Best investment I've made in myself. Arina's shopping tour saved me money and I finally have a cohesive wardrobe."</p>
+          <div class="testimonials__author">
+            <div class="testimonials__avatar" style="--hue: 120;">J</div>
+            <div>
+              <strong>Julia R.</strong>
+              <span>Software Engineer</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pricing -->
+  <section class="pricing section" id="pricing">
+    <div class="container">
+      <div class="section__header animate fade-up">
+        <span class="section__label">Investment</span>
+        <h2 class="section__title">Choose Your <em>Package</em></h2>
+        <p class="section__desc">Transparent pricing, no hidden fees. Every package includes a follow-up consultation.</p>
+      </div>
+      <div class="pricing__grid">
+        <div class="pricing__card animate scale-in" data-delay="0">
+          <h3>Basic</h3>
+          <div class="pricing__price"><span class="pricing__currency">$</span>199</div>
+          <p class="pricing__desc">Perfect for a style refresh</p>
+          <ul class="pricing__features">
+            <li>1-hour consultation</li>
+            <li>Color analysis</li>
+            <li>Style guide PDF</li>
+            <li>5 outfit suggestions</li>
+          </ul>
+          <a href="#contact" class="btn btn--outline">Get Started</a>
+        </div>
+        <div class="pricing__card pricing__card--featured animate scale-in" data-delay="1">
+          <div class="pricing__badge">Best Value</div>
+          <h3>Premium</h3>
+          <div class="pricing__price"><span class="pricing__currency">$</span>449</div>
+          <p class="pricing__desc">The complete style experience</p>
+          <ul class="pricing__features">
+            <li>2-hour consultation</li>
+            <li>Full wardrobe edit</li>
+            <li>Shopping list + guide</li>
+            <li>15 outfit combinations</li>
+            <li>30-day follow-up</li>
+          </ul>
+          <a href="#contact" class="btn btn--primary">Book Now</a>
+        </div>
+        <div class="pricing__card animate scale-in" data-delay="2">
+          <h3>VIP</h3>
+          <div class="pricing__price"><span class="pricing__currency">$</span>899</div>
+          <p class="pricing__desc">The ultimate transformation</p>
+          <ul class="pricing__features">
+            <li>Full-day experience</li>
+            <li>Wardrobe overhaul</li>
+            <li>Personal shopping tour</li>
+            <li>Unlimited combinations</li>
+            <li>90-day support</li>
+            <li>Seasonal refresh session</li>
+          </ul>
+          <a href="#contact" class="btn btn--outline">Get Started</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section class="contact section" id="contact">
+    <div class="container">
+      <div class="contact__grid">
+        <div class="contact__info animate fade-in-left">
+          <span class="section__label">Get in Touch</span>
+          <h2 class="section__title">Let's Create Your <em>New Look</em></h2>
+          <p>Ready to transform your style? Book a free 15-minute discovery call or send me a message below.</p>
+          <div class="contact__details">
+            <div class="contact__detail">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+              <span>hello@arinastyle.com</span>
+            </div>
+            <div class="contact__detail">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              <span>Prague, Czech Republic</span>
+            </div>
+          </div>
+          <div class="contact__social">
+            <a href="#" class="contact__social-link" aria-label="Instagram">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+            </a>
+            <a href="#" class="contact__social-link" aria-label="Pinterest">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2C6.5 2 2 6.5 2 12c0 4.1 2.5 7.6 6 9.2 0-.7 0-1.6.2-2.4l1.4-5.8s-.3-.7-.3-1.8c0-1.7 1-2.9 2.2-2.9 1 0 1.5.8 1.5 1.7 0 1-.7 2.6-1 4 -.3 1.2.6 2.1 1.7 2.1 2.1 0 3.7-2.2 3.7-5.5 0-2.9-2-4.9-5-4.9-3.4 0-5.4 2.5-5.4 5.2 0 1 .4 2.1.9 2.7.1.1.1.2.1.3l-.4 1.4c0 .2-.2.3-.4.2-1.4-.7-2.3-2.7-2.3-4.4 0-3.6 2.6-6.9 7.5-6.9 3.9 0 7 2.8 7 6.6 0 3.9-2.5 7.1-5.9 7.1-1.2 0-2.2-.6-2.6-1.3l-.7 2.7c-.3 1-.9 2-1.4 2.7C10 21.8 11 22 12 22c5.5 0 10-4.5 10-10S17.5 2 12 2z"/></svg>
+            </a>
+            <a href="#" class="contact__social-link" aria-label="TikTok">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 12a4 4 0 1 0 4 4V4a5 5 0 0 0 5 5"/></svg>
+            </a>
+          </div>
+        </div>
+        <div class="contact__form-wrapper animate fade-in-right">
+          <form class="contact__form" id="contactForm">
+            <div class="form__group">
+              <input type="text" id="name" placeholder=" " required>
+              <label for="name">Your Name</label>
+            </div>
+            <div class="form__group">
+              <input type="email" id="email" placeholder=" " required>
+              <label for="email">Email Address</label>
+            </div>
+            <div class="form__group">
+              <select id="service" required>
+                <option value="" disabled selected>Select a Service</option>
+                <option value="personal">Personal Styling</option>
+                <option value="wardrobe">Wardrobe Edit</option>
+                <option value="shopping">Shopping Tour</option>
+                <option value="other">Other</option>
+              </select>
+              <label for="service">Service Interest</label>
+            </div>
+            <div class="form__group">
+              <textarea id="message" rows="4" placeholder=" " required></textarea>
+              <label for="message">Your Message</label>
+            </div>
+            <button type="submit" class="btn btn--primary btn--full">Send Message</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__brand">
+          <a href="#" class="nav__logo">ARINA<span>STYLE</span></a>
+          <p>Helping you discover the power of personal style since 2017.</p>
+        </div>
+        <div class="footer__links">
+          <h4>Quick Links</h4>
+          <a href="#about">About</a>
+          <a href="#services">Services</a>
+          <a href="#portfolio">Portfolio</a>
+          <a href="#pricing">Pricing</a>
+        </div>
+        <div class="footer__links">
+          <h4>Legal</h4>
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+          <a href="#">Imprint</a>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <p>&copy; 2026 ArinaStyle. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
